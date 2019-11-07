@@ -1,14 +1,13 @@
 import React from 'react';
+import TodoListItem from './todo-list-item';
 
-const Todo_list = () =>{
-    const items = ['Learn React', 'Build Awesome app']
-
+const TodoList = () =>{
     return (
         <ul>
-            <li>{items[0]}</li>
-            <li>{items[1]}</li>
+            <li><TodoListItem/></li>
+            <li><TodoListItem/></li>
         </ul>
     );
 };
 
-export default Todo_list;
+export default TodoList;

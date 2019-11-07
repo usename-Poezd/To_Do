@@ -1,18 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Todo_list from './components/todo-list';
 
+import TodoList from './components/todo-list';
+import AppHeader from './components/app-header'
+import SearchPanel from './components/serach-panel'
 
-const App_header = () => <h1>My To Do list</h1>;
-
-const SearchPanel = () => {
-    const search_placrholder = 'Click here to search';
-    const searchStyle = {
-        fontSize: '20px'
-    };
-    return <input placeholder={search_placrholder}
-                  style={searchStyle}/>;
-};
 
 const App = () => {
     const isLogedIn = false;
@@ -23,9 +15,9 @@ const App = () => {
         <div>
             { isLogedIn ? null : login}<br/>
             <span>{ (new Date()).toString()}</span>
-            <App_header/>
+            <AppHeader/>
             <SearchPanel/>
-            <Todo_list/>
+            <TodoList/>
         </div>
     );
 };
