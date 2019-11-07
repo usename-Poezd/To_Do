@@ -1,16 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Todo_list from './components/todo-list';
 
-const Todo_list = () =>{
-    const items = ['Learn React', 'Build Awesome app']
-
-    return (
-        <ul>
-            <li>{items[0]}</li>
-            <li>{items[1]}</li>
-        </ul>
-    );
-};
 
 const App_header = () => <h1>My To Do list</h1>;
 
